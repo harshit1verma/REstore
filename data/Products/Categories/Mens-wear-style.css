@@ -1,0 +1,230 @@
+body{
+  margin: 0;
+  height: 100%;
+  font-family: Century Gothic;
+  background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+.navbar{
+  /* overflow: hidden; */
+  background-color: #FFFFFF;
+  font-family: Century Gothic;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navbar p{
+  display: inline-block;
+  font-size: 30px;
+  color: #009688;
+  text-decoration: none;
+  margin: 0;
+  padding: 8px 12px;
+}
+.navbar p b{
+  font-size: 31px;
+  font-weight:800;
+}
+.navbar ul{
+  float: right;
+  list-style-type: none;
+  margin-right: 5px
+}
+.navbar ul li{
+  display: inline-block;
+}
+.navbar ul li a{
+  color: #2c3e50;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.dropbtn{
+  color: #2c3e50;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: none;
+  background-color: #FFFFFF;
+  font-family: Century Gothic;
+  font-size: 16px;
+  margin-left: 25px;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+  margin-left: -30px;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 2;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdown-content a{
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #009688; color: #FFFFFF;}
+#login{
+  /* border: 1px solid #009688; */
+  background-color: #009688;
+  border-radius: 50px;
+  color: #fff;
+}
+#login:hover{
+  background-color: #5CDB95;
+  border: 3px solid #5CDB95;
+}
+.navbar ul li a:hover{
+  background-color: #009688;
+  color: #FFFFFF;
+}
+
+.main{
+min-height: 100%;
+margin-top: 70px;
+margin-bottom: -100px;
+}
+
+.push-top .navbar{
+  height: 70px;
+}
+
+.hero{
+  width: 100vw;
+  height: 65vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/men.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero-inner h1{
+  font-size: 5em;
+}
+
+.wrapper{
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex 0 0 300px;
+  /* border: 1px solid black; */
+  justify-content: center;
+}
+.block{
+  /* border: 1px solid black; */
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+.block img{
+  width: 240px;;
+}
+.block s{
+  font-size: 1em;
+  margin: 10px;
+  color: #878787;
+}
+.block span{
+  font-size:1em;
+  color: #26a541;
+}
+.block:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.push, .footer{
+  height: 100px;
+}
+.footer{
+  background-color: #05386B;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.footer-links{
+  width: 38%;
+  margin-left: 100px;
+  padding-bottom: 19px;
+}
+.footer-links ul li{
+  list-style-type: none;
+  float: left;
+  margin: auto 7px;
+  vertical-align: middle;
+}
+.footer-links ul li a{
+  text-decoration: none;
+  color: #cecece;
+  vertical-align: middle;
+}
+.footer-links ul li a:hover{
+  border-bottom: 1px solid white;
+  color: #F5F5F5;
+}
+.footer-social{
+  width: 220px;
+  margin-left: 150px;
+  text-align: center;
+
+}
+.footer-social img{
+  width: 40px;
+  transition: .5s ease;
+}
+.footer-social img:hover{
+  transform: rotate(360deg);
+}
+.footer-newsletter{
+text-align: center;
+width: 17%;
+}
+.footer-newsletter input[type=text]{
+  display: inline-block;
+  width: 70%;
+  padding: 8px 12px;
+  margin: 8px 0px;
+  border:none;
+  background: #f2f2f2;
+  border-radius: 100px;
+}
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.footer-newsletter button{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border:none;
+  background: #f2f2f2;
+  transition: 0.5s;
+}
+.footer-newsletter button:hover{
+  background-color: black;
+  color: white;
+}
